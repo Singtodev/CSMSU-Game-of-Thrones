@@ -1,4 +1,39 @@
-<main class="bg-[#282828] h-[100dvh]">
+<main class="bg-[#282828] minh-[100dvh] h-auto">
     <app-header />
+    <div class="max-w-[74rem] py-5 mx-auto">
+        <div class="flex flex-row justify-between gap-x-14">
+            <img class="h-[220px]" src="https://ng-hw-1.firebaseapp.com/assets/images/photo.jpg" />
+            <div class="w-[80%] text-white text-xl pl-8">
+                <div class="border-b border-gray-700 pb-3 font-bold">Daenerys Targaryen</div>
+                <p class="text-sm py-4">Character</p>
+                <p class="text-sm py-2">Daenerys Targaryen is the daughter of King Aerys II Targaryen (also referred to as "The Mad King") and his sister-wife Queen Rhaella, and is one of the last survivors of House Targaryen. She serves as the third-person point-of-view character of 31 chapters of A Game of Thrones, A Clash of Kings, A Storm of Swords, and A Dance with Dragons. This makes her the series' fourth most prominent narrative voice after Tyrion Lannister, Jon Snow and Arya Stark. </p>
+            </div>
+        </div>
+        <div class="flex flex-row justify-between gap-x-14 py-4 border-b border-gray-700 pb-5">
+            <iframe class="w-[62rem] h-[312px]" src="https://www.youtube.com/embed/Ydi80YrCnPY?si=-L4s1uTiTLjgFnSN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="w-full text-white text-xl pl-8">
+                <p class="text-sm py-1">Personality</p>
+                <p class="text-sm py-2">
+                    Daenerys is most often described as uncommonly beautiful, with long, pale silver-gold hair and purple eyes. She is slender and pale, although taller than some of her female ancestors. Tales of Daenerys's beauty are numerous, and throughout the novels she encounters countless suitors who seek her hand in marriage, sometimes to gain control of her three dragons. She is fluent in the Common Tongue of Westeros, Dothraki, High Valyrian and bastard Valyrian, which she speaks with a Tyroshi accent. Over the course of the first three novels she becomes fluent in the Dothraki language and Ghiscari, spoken in the slave cities in Essos. 
+                </p>
+            </div>
+        </div>
+        <div class="flex flex-col">
+            <span class="text-white text-sm py-3">Comment</span>
+            <textarea
+            placeholder="Ex. It makes me feel..."
+            class="bg-transparent border border-white h-[100px] rounded-md outline-none p-2 text-white"></textarea>
+            <div class="flex justify-between pt-8">
+                <div class="flex gap-x-1">
+                    <fa-icon [icon]="faHearth" class="text-slate-500 text-xl"></fa-icon>
+                    <fa-icon [icon]="faHearth" class="text-slate-500 text-xl"></fa-icon>
+                    <fa-icon [icon]="faHearth" class="text-slate-500 text-xl"></fa-icon>
+                    <fa-icon [icon]="faHearth" class="text-slate-500 text-xl"></fa-icon>
+                    <fa-icon [icon]="faHearth" class="text-slate-500 text-xl"></fa-icon>
+                </div>
+                <div class="text-white bg-[#424242] px-3 py-2 cursor-pointer text-sm flex items-center rounded-md">Send</div>
+            </div>
+        </div>
+    </div>
 </main>
 <router-outlet></router-outlet>
