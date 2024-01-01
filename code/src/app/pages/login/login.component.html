@@ -1,0 +1,21 @@
+<div class="absolute w-full h-full  bg-[#8c8c8c] flex justify-center items-center ">
+    <div class="w-[25rem] h-auto bg-white shadow-lg p-2 px-4 rounded-md">
+        <div class="flex flex-row justify-center gap-x-3">
+            <span><fa-icon [icon]="faLock" class="text-black text-xl"></fa-icon></span>
+           <p class="text-2xl font-bold"> Login to My System</p>
+        </div>
+        <div class="flex flex-row text-sm text-gray-500">
+            Please enter username and password
+        </div>
+        <div class="flex flex-col gap-y-6 my-6">
+            <input type="text" class="border border-black h-11 w-full rounded-md px-2 focus:ring-1 focus:ring-black outline-none" placeholder="Email" />
+            <input type="text" class="border border-black h-11 w-full rounded-md px-2 focus:ring-1 focus:ring-black outline-none" placeholder="Password" />
+        </div>
+        
+        <div [routerLink]="'/'" class="flex flex-row justify-between py-2">
+                <button class="py-1">Sign Up</button>
+                <button class="py-1 px-3 bg-[#3f51b5] text-white rounded-md">Login</button>
+        </div>
+    </div>
+
+</div>

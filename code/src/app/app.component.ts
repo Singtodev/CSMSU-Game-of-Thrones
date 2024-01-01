@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +13,4 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons';
 })
 export class AppComponent {
   title = 'code';
-
-  faHearth = faHeart;
-
 }
